@@ -1,0 +1,282 @@
+code;column;type;full_name;short_name
+3002;committee;committee;Committee on Agrarian and Land Policy of the Verkhovna Rada of Ukraine;Committee on Agrarian and Land Policy
+3003;committee;committee;Committee of the Verkhovna Rada of Ukraine on Anti-Corruption Policy;Committee on Anti-Corruption Policy
+3004;committee;committee;The Verkhovna Rada of Ukraine Committee on Budget;Committee on Budget
+3005;committee;committee;Committee on Humanitarian and Information Policy of the Verkhovna Rada of Ukraine;Committee on Humanitarian and Information Policy
+3006;committee;committee;Committee of the Verkhovna Rada of Ukraine on Environmental Policy and Environmental Management;Committee on Environmental Policy and Environmental Management
+3007;committee;committee;Verkhovna Rada of Ukraine Committee on Economic Development;Committee on Economic Development
+3008;committee;committee;Committee of the Verkhovna Rada of Ukraine on Energy and Housing and Communal Services;Committee on Energy and Housing and Communal Services
+3009;committee;committee;Committee of the Verkhovna Rada of Ukraine on the Nation's Health, Medical Assistance and Health Insurance;Committee on the Nations Health, Medical Assistance and Health Insurance
+3010;committee;committee;Committee on Foreign Policy and Interparliamentary Cooperation of the Verkhovna Rada of Ukraine;Committee on Foreign Policy and Interparliamentary Cooperation
+3011;committee;committee;Verkhovna Rada of Ukraine Committee on Integration of Ukraine with the European Union;Committee on Integration of Ukraine with the European Union
+3012;committee;committee;Committee of the Verkhovna Rada of Ukraine on Youth and Sport;Committee on Youth and Sport
+3013;committee;committee;Committee of the Verkhovna Rada of Ukraine on National Security, Defense and Intelligence;Committee on National Security, Defense and Intelligence
+3014;committee;committee;Committee of the Verkhovna Rada of Ukraine on the Organization of State Power, Local Self-Government, Regional Development and Urban Development;Committee on the Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3015;committee;committee;Committee of the Verkhovna Rada of Ukraine on Education, Science and Innovation;Committee on Education, Science and Innovation
+3016;committee;committee;Committee of the Verkhovna Rada of Ukraine on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories in Donetsk, Lugansk Oblasts and the Autonomous Republic of Crimea, the City of Sevastopol, National Minorities and International Relations;Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories, National Minorities and International Relations
+3017;committee;committee;Committee on Legal Policy of the Verkhovna Rada of Ukraine;Committee on Legal Policy
+3018;committee;committee;Law Enforcement Committee of the Verkhovna Rada of Ukraine;Committee on Law Enforcement
+3019;committee;committee;The Verkhovna Rada of Ukraine Committee on the Rules of Procedure, Deputies and Ethics of the Verkhovna Rada;Committee on the Rules of Procedure, Deputies and Ethics Verkhovna Rada
+3020;committee;committee;Verkhovna Rada Committee on Freedom of Speech;Committee on Freedom of Speech
+3021;committee;committee;Verkhovna Rada of Ukraine Committee on Social Policy and Protection of Veterans' Rights;Committee on Social Policy and Protection of Veterans Rights
+3022;committee;committee;Committee of the Verkhovna Rada of Ukraine on Transport and Infrastructure;Committee on Transport and Infrastructure
+3023;committee;committee;Committee of the Verkhovna Rada of Ukraine on Finance, Tax and Customs Policy;Committee on Finance, Tax and Customs Policy
+3024;committee;committee;Verkhovna Rada of Ukraine Committee on Digital Transformation;Committee on Digital Transformation
+3025;committee;faction_management;;Faction management
+3027;committee;faction_management;;Faction management
+3037;committee;subcommittee;Subcommittee on State Youth Policy of the Verkhovna Rada of Ukraine Committee on Youth and Sport;Subcommittee on State Youth Policy Committee on Youth and Sport
+3038;committee;subcommittee;Subcommittee on National Patriotic Education of the Committee of the Verkhovna Rada of Ukraine on Youth and Sport;Subcommittee on National Patriotic Education Committee on Youth and Sport
+3039;committee;subcommittee;Subcommittee on Physical Culture and Mass Sports of the Committee of the Verkhovna Rada of Ukraine on Youth and Sport;Subcommittee on Physical Culture and Mass Sports Committee on Youth and Sport
+3040;committee;subcommittee;Subcommittee on Sport of Higher Achievement and Sport Activity of the Verkhovna Rada of Ukraine Committee on Youth and Sport;Subcommittee on Sport of Higher Achievement and Sport Activity Committee on Youth and Sport
+3041;committee;subcommittee;Subcommittee on the Protection and Management of Subsoil, Water Resources of the Verkhovna Rada of Ukraine Committee on Environmental Policy and Environmental Management;Subcommittee on the Protection and Management of Subsoil, Water Resources Committee on Environmental Policy and Environmental Management
+3042;committee;subcommittee;Subcommittee on Forest Resources, Wildlife, Natural Landscapes and Natural Resources Fund of the Verkhovna Rada of Ukraine Committee on Environmental Policy and Environmental Management;Subcommittee on Forest Resources, Wildlife, Natural Landscapes and Natural Resources Fund Committee on Environmental Policy and Environmental Management
+3043;committee;subcommittee;Subcommittee on State Environmental Monitoring of the Verkhovna Rada of Ukraine Committee on Environmental Policy and Environmental Management;Subcommittee on State Environmental Monitoring Committee on Environmental Policy and Environmental Management
+3044;committee;subcommittee;Subcommittee on State Policy in the Field of Waste Management of the Verkhovna Rada of Ukraine Committee on Environmental Policy and Environmental Management;Subcommittee on State Policy in the Field of Waste Management Committee on Environmental Policy and Environmental Management
+3045;committee;subcommittee;Subcommittee on Overcoming the Consequences of the Chornobyl Catastrophe of the Verkhovna Rada of Ukraine Committee on Environmental Policy and Environmental Management;Subcommittee on Overcoming the Consequences Chornobyl Catastrophe Committee on Environmental Policy and Environmental Management
+3046;committee;subcommittee;Subcommittee on Civil Protection, Prevention and Elimination of Emergencies of Man-made or Natural Characteristics and Overcoming the Negative Impact on the Environment Caused by Armed Conflict in the Territory of Donetsk and Luhansk Committees on Environmental Policy and Environmental Policy;Subcommittee on Civil Protection, Prevention and Elimination of Emergencies of Man-made or Natural Characteristics and Overcoming the Negative Impact on the Environment Caused by Armed Conflict in the Territory of Donetsk and Luhansk Committee on Environmental Policy and Environmental Management
+3047;committee;subcommittee;Subcommittee on Legislative Support to the Implementation of the State's Strategic Course for the Full Membership of the EU and NATO of the Verkhovna Rada of Ukraine Committee on Foreign Policy and Interparliamentary Cooperation;Subcommittee on Legislative Support to the Implementation States Strategic Course for the Full Membership EU and NATO Committee on Foreign Policy and Interparliamentary Cooperation
+3048;committee;subcommittee;Subcommittee on Interparliamentary Cooperation, Bilateral and Multilateral Relations of the Verkhovna Rada of Ukraine Committee on Foreign Policy and Interparliamentary Cooperation;Subcommittee on Interparliamentary Cooperation, Bilateral and Multilateral Relations Committee on Foreign Policy and Interparliamentary Cooperation
+3051;committee;subcommittee;Subcommittee on Foreign Economic Relations and Effective Use of International Assistance to the Verkhovna Rada of Ukraine Committee on Foreign Policy and Interparliamentary Cooperation;Subcommittee on Foreign Economic Relations and Effective Use of International Assistance to Committee on Foreign Policy and Interparliamentary Cooperation
+3052;committee;subcommittee;Subcommittee on Relations and Protection of Rights and Interests of Ukrainians Abroad Committee of the Verkhovna Rada of Ukraine Committee on Foreign Policy and Interparliamentary Cooperation;Subcommittee on Relations and Protection of Rights and Interests of Ukrainians Abroad Committee Committee on Foreign Policy and Interparliamentary Cooperation
+3053;committee;subcommittee;Subcommittee on Ukraine's Compliance with International Obligations in the Field of Human Rights Protection and Gender Policy of the Verkhovna Rada of Ukraine Committee on Foreign Policy and Interparliamentary Cooperation;Subcommittee on Ukraines Compliance with International Obligations in the Field of Human Rights Protection and Gender Policy Committee on Foreign Policy and Interparliamentary Cooperation
+3054;committee;subcommittee;Subcommittee on Global Risks and Challenges of the Verkhovna Rada of Ukraine Committee on Foreign Policy and Interparliamentary Cooperation;Subcommittee on Global Risks and Challenges Committee on Foreign Policy and Interparliamentary Cooperation
+3055;committee;subcommittee;Subcommittee on Budgetary Policy and Improvement of the Budget Code of Ukraine Committee on Budgetary Committee of the Verkhovna Rada of Ukraine;Subcommittee on Budgetary Policy and Improvement Budget Code of Ukraine Committee on Budget
+3057;committee;subcommittee;Subcommittee on Revenue and Financing of the State Budget and State Debt of the Verkhovna Rada Committee on Budget;Subcommittee on Revenue and Financing State Budget and State Debt Committee on Budget
+3058;committee;subcommittee;State Budget Expenditure Subcommittee of the Verkhovna Rada of Ukraine Committee on Budget;Subcommittee on State Budget Expenditure Committee on Budget
+3059;committee;subcommittee;Subcommittee on State Investment Projects of the Committee of the Verkhovna Rada of Ukraine on Budget;Subcommittee on State Investment Projects Committee on Budget
+3060;committee;subcommittee;Subcommittee on Local Budgets and Budget Support for Regional Development of the Verkhovna Rada of Ukraine Committee on Budget;Subcommittee on Local Budgets and Budget Support for Regional Development Committee on Budget
+3061;committee;subcommittee;Subcommittee on State Financial Control and Activity of the Accounting Chamber of the Verkhovna Rada of Ukraine Committee on Budget;Subcommittee on State Financial Control and Activity Accounting Chamber Committee on Budget
+3062;committee;subcommittee;Subcommittee on the Evaluation of Bills on the Impact on Budget Indicators and Compliance with Budget Legislation of the Verkhovna Rada Committee on Budget;Subcommittee on the Evaluation of Bills on the Impact on Budget Indicators and Compliance with Budget Legislation Committee on Budget
+3063;committee;subcommittee;Subcommittee on Modern Information Technologies and Innovations in the Budget Process of the Verkhovna Rada of Ukraine Committee on Budget;Subcommittee on Modern Information Technologies and Innovations in the Budget Process Committee on Budget
+3064;committee;subcommittee;Subcommittee on the Activities of the Prosecutor's Office Bodies of the Verkhovna Rada Committee on Law Enforcement;Subcommittee on the Activities Prosecutors Office Bodies Committee on Law Enforcement
+3065;committee;subcommittee;Law Enforcement Subcommittee of the Law Enforcement Committee of the Verkhovna Rada of Ukraine;Subcommittee on Law Enforcement  Committee on Law Enforcement 
+3066;committee;subcommittee;Subcommittee on the Organization of Public Safety and Order of the Verkhovna Rada Committee on Law Enforcement;Subcommittee on the Organization of Public Safety and Order Committee on Law Enforcement
+3067;committee;subcommittee;Subcommittee on Criminal Legislation and Crime Prevention of the Verkhovna Rada Committee on Law Enforcement;Subcommittee on Criminal Legislation and Crime Prevention Committee on Law Enforcement
+3068;committee;subcommittee;Subcommittee on Criminal Procedure Legislation and Operational Investigation Activities of the Verkhovna Rada Committee on Law Enforcement;Subcommittee on Criminal Procedure Legislation and Operational Investigation Activities Committee on Law Enforcement
+3069;committee;subcommittee;Subcommittee on Legislation on Administrative Offenses and Security and Detective Activities of the Verkhovna Rada of Ukraine Committee on Law Enforcement;Subcommittee on Legislation on Administrative Offenses and Security and Detective Activities Committee on Law Enforcement
+3070;committee;subcommittee;Subcommittee on Legislative Support and Control of the Diplomatic Service of the Verkhovna Rada of Ukraine Committee on Foreign Policy and Interparliamentary Cooperation;Subcommittee on Legislative Support and Control Diplomatic Service Committee on Foreign Policy and Interparliamentary Cooperation
+3071;committee;subcommittee;Subcommittee on the Implementation of Values ??and Standards of NATO, International Military Cooperation and Peacekeeping of the Verkhovna Rada Committee on National Security, Defense and Intelligence;Subcommittee on the Implementation of Values ??and Standards of NATO, International Military Cooperation and Peacekeeping Committee on National Security, Defense and Intelligence
+3072;committee;subcommittee;State Security and Defense Subcommittee of the Verkhovna Rada of Ukraine Committee on National Security, Defense and Intelligence;Subcommittee on State Security and Defense Committee on National Security, Defense and Intelligence
+3073;committee;subcommittee;Subcommittee on Defense Industry and Technical Modernization of the Verkhovna Rada of Ukraine Committee on National Security, Defense and Intelligence;Subcommittee on Defense Industry and Technical Modernization Committee on National Security, Defense and Intelligence
+3074;committee;subcommittee;Subcommittee on the Supervision of the Activities of State Special Purpose Bodies with Law Enforcement Functions, Law Enforcement Agencies, Special Purpose Law Enforcement Bodies and Intelligence Bodies of the Verkhovna Rada of Ukraine Committee on National Security, Defense and Intelligence;Subcommittee on the Supervision Activities of State Special Purpose Bodies with Law Enforcement Functions, Law Enforcement Agencies, Special Purpose Law Enforcement Bodies and Intelligence Bodies Committee on National Security, Defense and Intelligence
+3075;committee;subcommittee;Subcommittee on Social Issues in National Security and Defense of the Verkhovna Rada of Ukraine Committee on National Security, Defense and Intelligence;Subcommittee on Social Issues in National Security and Defense Committee on National Security, Defense and Intelligence
+3076;committee;subcommittee;Subcommittee on Early Development and Preschool Education of the Verkhovna Rada of Ukraine Committee on Education, Science and Innovation;Subcommittee on Early Development and Preschool Education Committee on Education, Science and Innovation
+3077;committee;subcommittee;Subcommittee on General Secondary, Inclusive Education and Education in the Occupied Territories of the Verkhovna Rada of Ukraine Committee on Education, Science and Innovation;Subcommittee on General Secondary, Inclusive Education and Education in the Occupied Territories Committee on Education, Science and Innovation
+3078;committee;subcommittee;Subcommittee on Vocational, Technical and Professional Higher Education of the Verkhovna Rada of Ukraine Committee on Education, Science and Innovation;Subcommittee on Vocational, Technical and Professional Higher Education Committee on Education, Science and Innovation
+3079;committee;subcommittee;Subcommittee on Higher Education of the Verkhovna Rada of Ukraine Committee on Education, Science and Innovation;Subcommittee on Higher Education Committee on Education, Science and Innovation
+3080;committee;subcommittee;Subcommittee on Science and Innovation of the Verkhovna Rada of Ukraine Committee on Education, Science and Innovation;Subcommittee on Science and Innovation Committee on Education, Science and Innovation
+3081;committee;subcommittee;Subcommittee on Lifelong Learning and Extracurricular Education of the Verkhovna Rada of Ukraine Committee on Education, Science and Innovation;Subcommittee on Lifelong Learning and Extracurricular Education Committee on Education, Science and Innovation
+3082;committee;subcommittee;Subcommittee on Health Insurance of the Verkhovna Rada of Ukraine Committee on Health of the Nation, Medical Assistance and Health Insurance;Subcommittee on Health Insurance Committee on Health Nation, Medical Assistance and Health Insurance
+3083;committee;subcommittee;Subcommittee on Health of the Verkhovna Rada of Ukraine Committee on Health, Nursing and Health Insurance;Subcommittee on Health Committee on Health, Nursing and Health Insurance
+3084;committee;subcommittee;Subcommittee on Pharmacy and Pharmaceutical Activities of the Verkhovna Rada of Ukraine Committee on Health, Nursing and Health Insurance;Subcommittee on Pharmacy and Pharmaceutical Activities Committee on Health, Nursing and Health Insurance
+3085;committee;subcommittee;Subcommittee on Epidemic Security,of combating HIV / AIDS and socially dangerous diseases of the Verkhovna Rada of Ukraine Committee on National Health, Medical Assistance and Health Insurance;Subcommittee on Epidemic Security, of combating HIV AIDS and socially dangerous diseases Committee on National Health, Medical Assistance and Health Insurance
+3086;committee;subcommittee;Subcommittee on Modern Medical Technology and Transplantation Development Committee of the Verkhovna Rada of Ukraine Committee on Health of the Nation, Medical Assistance and Medical Insurance;Subcommittee on Modern Medical Technology and Transplantation Development Committee Committee on Health Nation, Medical Assistance and Medical Insurance
+3087;committee;subcommittee;Subcommittee on Medical Technology and Medical Transport of the Verkhovna Rada of Ukraine Committee on National Health, Medical Assistance and Medical Insurance;Subcommittee on Medical Technology and Medical Transport Committee on National Health, Medical Assistance and Medical Insurance
+3088;committee;subcommittee;Subcommittee on Maternity and Childhood Health and Care of the Verkhovna Rada of Ukraine Committee on National Health, Medical Assistance and Health Insurance;Subcommittee on Maternity and Childhood Health and Care Committee on National Health, Medical Assistance and Health Insurance
+3089;committee;subcommittee;Subcommittee on Military Medicine of the Verkhovna Rada of Ukraine Committee on National Health, Medical Assistance and Health Insurance;Subcommittee on Military Medicine Committee on National Health, Medical Assistance and Health Insurance
+3090;committee;subcommittee;Subcommittee on Technical Regulation and Standardization in Healthcare of the Verkhovna Rada of Ukraine Committee on National Health, Medical Assistance and Health Insurance;Subcommittee on Technical Regulation and Standardization in Healthcare Committee on National Health, Medical Assistance and Health Insurance
+3091;committee;subcommittee;Legislative Subcommittee on the Status of People's Deputy of Ukraine of the Verkhovna Rada of Ukraine Committee on Regulations, Deputies' Ethics and Organization;Subcommittee on the Status of Peoples Deputy of Ukraine Committee on Regulations, Deputies Ethics and Organization
+3092;committee;subcommittee;Subcommittee on the Rules of Procedure of the Verkhovna Rada of Ukraine Committee of the Verkhovna Rada of Ukraine;Subcommittee on the Rules of Procedure Committee on the Rules of Procedure, Deputies and Ethics Verkhovna Rada
+3093;committee;subcommittee;Subcommittee on Parliamentary Ethics of the Verkhovna Rada of Ukraine Committee on Regulation, Parliamentary Ethics and Organization of the Verkhovna Rada of Ukraine;Subcommittee on Parliamentary Ethics Committee on the Rules of Procedure, Deputies and Ethics Verkhovna Rada
+3094;committee;subcommittee;Subcommittee on the Organization of the Verkhovna Rada of Ukraine Committee of the Verkhovna Rada of Ukraine;Subcommittee on the Organization of the Verkhovna Rada of Ukraine Committee on the Rules of Procedure, Deputies and Ethics Verkhovna Rada
+3095;committee;subcommittee;Subcommittee on ensuring the activities of the People's Deputies of Ukraine of the Committee of the Verkhovna Rada of Ukraine;Subcommittee on ensuring the activities of the Peoples Deputies of Ukraine Committee on the Rules of Procedure, Deputies and Ethics Verkhovna Rada
+3096;committee;subcommittee;subcommittee on ensuring the activity of the Verkhovna Rada of Ukraine of the Committee of the Verkhovna Rada of Ukraine;Subcommittee on ensuring the activity  of the Verkhovna Rada of Ukraine Committee on the Rules of Procedure, Deputies and Ethics Verkhovna Rada
+3097;committee;subcommittee;Railway Transport Subcommittee of the Committee on Transport and Infrastructure of the Verkhovna Rada of Ukraine;Subcommittee on Railway Transport Committee on Transport and Infrastructure
+3098;committee;subcommittee;Subcommittee on Road Transport of the Verkhovna Rada of Ukraine Committee on Transport and Infrastructure;Subcommittee on Road Transport Committee on Transport and Infrastructure
+3099;committee;subcommittee;Maritime Transport Subcommittee of the Verkhovna Rada of Ukraine Committee on Transport and Infrastructure;Subcommittee on Maritime Transport Committee on Transport and Infrastructure
+3100;committee;subcommittee;Subcommittee on River Transport Committee of the Verkhovna Rada of Ukraine on Transport and Infrastructure;Subcommittee on River Transport Committee on Transport and Infrastructure
+3101;committee;subcommittee;Subcommittee on Aviation Transport of the Verkhovna Rada of Ukraine Committee on Transport and Infrastructure;Subcommittee on Aviation Transport Committee on Transport and Infrastructure
+3102;committee;subcommittee;Subcommittee on Roads and Roads of the Verkhovna Rada of Ukraine Committee on Transport and Infrastructure;Subcommittee on Roads and Roads Committee on Transport and Infrastructure
+3103;committee;subcommittee;subcommittee on road safety and transport safety of the Verkhovna Rada of Ukraine Committee on Transport and Infrastructure;Subcommittee on Road Safety and Transport Safety Committee on Transport and Infrastructure
+3104;committee;subcommittee;Pipeline Transport Subcommittee of the Verkhovna Rada of Ukraine Committee on Transport and Infrastructure;Subcommittee on Pipeline Transport Committee on Transport and Infrastructure
+3105;committee;subcommittee;Postal Committee of the Committee on Transport and Infrastructure of the Verkhovna Rada of Ukraine;Subcommittee on Postal Committee on Transport and Infrastructure
+3106;committee;subcommittee;Subcommittee on the Right of Citizens to Information of the Verkhovna Rada of Ukraine Committee on Freedom of Speech;Subcommittee on the Right of Citizens to Information Committee on Freedom of Speech
+3108;committee;subcommittee;Subcommittee on Human Rights of the Committee of the Verkhovna Rada of Ukraine on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories in Donetsk, Luhansk Oblasts and the Autonomous Republic of Crimea, the City of Sevastopol, National Minorities and International Relations;Subcommittee on Human Rights Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories, National Minorities and International Relations
+3109;committee;subcommittee;Subcommittee on Ethnopolitics, Rights of Indigenous Peoples and National Minorities of Ukraine Committee of the Verkhovna Rada of Ukraine on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories in Donetsk, Luhansk Oblasts and the Autonomous Republic of Crimea, the City of Sevastopol, National Minorities;Subcommittee on Ethnopolitics, Rights of Indigenous Peoples and National Minorities of Ukraine Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories, National Minorities and International Relations
+3110;committee;subcommittee;Subcommittee on Migration Policy and Citizenship of the Verkhovna Rada Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories in Donetsk, Luhansk and Crimea, Sevastopol, National Minorities and International Relations;Subcommittee on Migration Policy and Citizenship Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories, National Minorities and International Relations
+3111;committee;subcommittee;Subcommittee on Gender Equality and Non-Discrimination of the Verkhovna Rada of Ukraine Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories in Donetsk, Luhansk and Crimea, Sevastopol, National Minorities and International Relations;Subcommittee on Gender Equality and Non-Discrimination Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories, National Minorities and International Relations
+3112;committee;subcommittee;Subcommittee on the Rights and Freedoms of Persons Residing in Temporarily Occupied Territories of Ukraine and Internally Displaced Persons of the Verkhovna Rada Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories in Donetsk, Luhansk and the Autonomous Republic of Crimea, the Autonomous Republic of Crimea minorities and ethnic relations;Subcommittee on the Rights and Freedoms of Persons Residing in Temporarily Occupied Territories of Ukraine and Internally Displaced Persons Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories, National Minorities and International Relations
+3113;committee;subcommittee;Temporary Eye Subcommittee of the Ukrainian Territories of the Verkhovna Rada of Ukraine Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories in Donetsk, Luhansk and the Autonomous Republic of Crimea, the City of Sevastopol, National Minorities and International Relations;Subcommittee on Temporarily Occupied Territories of Ukraine Committee on Human Rights, Occupation and Reintegration of Temporarily Occupied Territories, National Minorities and International Relations
+3114;committee;subcommittee;Subcommittee on Prevention and Control of Oncological Diseases of the Verkhovna Rada of Ukraine Committee on National Health, Medical Assistance and Health Insurance;Subcommittee on Prevention and Control of Oncological Diseases Committee on National Health, Medical Assistance and Health Insurance
+3115;committee;subcommittee;Subcommittee on Political Reform and Constitutional Law of the Committee on Legal Policy of the Verkhovna Rada of Ukraine;Subcommittee on Political Reform and Constitutional Law Committee on Legal Policy
+3116;committee;subcommittee;Subcommittee on Justice of the Committee on Legal Policy of the Verkhovna Rada of Ukraine;Subcommittee on Justice Committee on Legal Policy
+3117;committee;subcommittee;Subcommittee on the Activities of the Judiciary, Sentencing Bodies and Probation Committee of the Verkhovna Rada of Ukraine Committee on Legal Policy;Subcommittee on the Activities Judiciary, Sentencing Bodies and Probation Committee on Legal Policy
+3118;committee;subcommittee;Subcommittee on Civil and Administrative Legislation of the Committee on Legal Policy of the Verkhovna Rada of Ukraine;Subcommittee on Civil and Administrative Legislation Committee on Legal Policy
+3119;committee;subcommittee;Subcommittee on the Enforcement of Judgments of the European Court of Human Rights and Alternative Dispute Resolution of the Verkhovna Rada Committee on Legal Policy;Subcommittee on the Enforcement of Judgments European Court of Human Rights and Alternative Dispute Resolution Committee on Legal Policy
+3120;committee;subcommittee;Subcommittee on the Organization and Activity of the Bar, Legal Aid Bodies of the Verkhovna Rada Committee on Legal Policy;Subcommittee on the Organization and Activity Bar, Legal Aid Bodies Committee on Legal Policy
+3121;committee;subcommittee;Subcommittee on Elections, Referenda and Other Forms of Direct Democracy of the Verkhovna Rada of Ukraine Committee on State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on Elections, Referenda and Other Forms of Direct Democracy Committee on State Power, Local Self-Government, Regional Development and Urban Development
+3122;committee;subcommittee;Subcommittee on the Organization of State Power, Civil Service, Service in Local Self-Government Bodies, State Symbols and Awards of the Committee of the Verkhovna Rada of Ukraine on the Organization of State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on the Organization of State Power, Civil Service, Service in Local Self-Government Bodies, State Symbols and Awards Committee on the Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3123;committee;subcommittee;Subcommittee on Administrative and Territorial Organization of the Committee of the Verkhovna Rada of Ukraine on the Organization of State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on Administrative and Territorial Organization Committee on the Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3124;committee;subcommittee;Subcommittee on Local Self-Government and Population Self-Organization Bodies of the Committee of the Verkhovna Rada of Ukraine on the Organization of State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on Local Self-Government and Population Self-Organization Bodies Committee on the Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3125;committee;subcommittee;Subcommittee on Administrative Services and Administrative Procedures of the Committee of the Verkhovna Rada of Ukraine on the Organization of State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on Administrative Services and Administrative Procedures Committee on the Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3126;committee;subcommittee;Subcommittee on Regional Policy and Local Budgets of the Committee of the Verkhovna Rada of Ukraine on the Organization of State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on Regional Policy and Local Budgets Committee on the Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3127;committee;subcommittee;subcommittee on urban planning, landscaping and land relations within the territories of development of the Verkhovna Rada of Ukraine Committee on the Organization of State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on Urban Planning, Landscaping and Land Relations within the Territories of Development Committee on the Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3128;committee;subcommittee;Subcommittee on Construction and Design of the Verkhovna Rada of Ukraine Committee on Organization of State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on Construction and Design Committee on Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3130;committee;subcommittee;Subcommittee on Technical Regulation and Pricing in Construction, Production of Building Materials and Energy Efficiency in the Construction Industry of the Verkhovna Rada Committee on State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on Technical Regulation and Pricing in Construction, Production of Building Materials and Energy Efficiency in the Construction Industry Committee on State Power, Local Self-Government, Regional Development and Urban Development
+3131;committee;subcommittee;Subcommittee on the Protection of Investments in the Objects of Construction of the Committee of the Verkhovna Rada of Ukraine on the Organization of State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on the Protection of Investments in the Objects of Construction Committee on the Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3132;committee;subcommittee;Subcommittee on Housing and Housing, Committee of the Verkhovna Rada of Ukraine Committee on Organization of State Power, Local Self-Government, Regional Development and Urban Development;Subcommittee on Housing and Housing, Committee Committee on Organization of State Power, Local Self-Government, Regional Development and Urban Development
+3133;committee;subcommittee;Subcommittee on Sustainable Development, Strategy and Investment of the Verkhovna Rada of Ukraine Committee on Energy and Housing and Communal Services;Subcommittee on Sustainable Development, Strategy and Investment Committee on Energy and Housing and Communal Services
+3134;committee;subcommittee;Subcommittee on Nuclear Energy and Nuclear Safety of the Committee of the Verkhovna Rada of Ukraine on Energy and Housing and Communal Services;Subcommittee on Nuclear Energy and Nuclear Safety Committee on Energy and Housing and Communal Services
+3135;committee;subcommittee;Subcommittee on Electricity and Electricity Transport of the Verkhovna Rada of Ukraine Committee on Energy and Housing and Communal Services;Subcommittee on Electricity and Electricity Transport Committee on Energy and Housing and Communal Services
+3136;committee;subcommittee;Subcommittee on Alternative and Renewable Energy Sources, Alternative Fuels of the Verkhovna Rada of Ukraine Committee on Energy and Housing and Communal Services;Subcommittee on Alternative and Renewable Energy Sources, Alternative Fuels Committee on Energy and Housing and Communal Services
+3137;committee;subcommittee;Subcommittee on Energy Conservation and Energy Efficiency of the Verkhovna Rada of Ukraine Committee on Energy and Housing and Communal Services;Subcommittee on Energy Conservation and Energy Efficiency Committee on Energy and Housing and Communal Services
+3138;committee;subcommittee;Subcommittee on Oil, Petroleum and Petroleum Supply Committee of the Verkhovna Rada of Ukraine Committee on Energy and Housing and Communal Services;Subcommittee on Oil, Petroleum and Petroleum Supply Committee Committee on Energy and Housing and Communal Services
+3139;committee;subcommittee;Subcommittee on Gas, Gas Transport and Gas Policy of the Verkhovna Rada of Ukraine Committee on Energy and Housing and Communal Services;Subcommittee on Gas, Gas Transport and Gas Policy Committee on Energy and Housing and Communal Services
+3140;committee;subcommittee;Coal Industry Subcommittee of the Verkhovna Rada of Ukraine Committee on Energy;Subcommittee on Coal Industry Committee on Energy and Housing and Communal Services
+3141;committee;doesnt_work;;Doesnt work in committee
+3142;committee;doesnt_work;;Doesnt work in committee
+3143;committee;doesnt_work;;Doesnt work in committee
+3144;committee;doesnt_work;;Doesnt work in committee
+3145;committee;doesnt_work;;Doesnt work in committee
+3146;committee;doesnt_work;;Doesnt work in committee
+3147;committee;doesnt_work;;Doesnt work in committee
+3148;committee;doesnt_work;;Doesnt work in committee
+3149;committee;doesnt_work;;Doesnt work in committee
+3150;committee;doesnt_work;;Doesnt work in committee
+3151;committee;doesnt_work;;Doesnt work in committee
+3152;committee;doesnt_work;;Doesnt work in committee
+3153;committee;doesnt_work;;Doesnt work in committee
+3154;committee;doesnt_work;;Doesnt work in committee
+3155;committee;doesnt_work;;Doesnt work in committee
+3156;committee;doesnt_work;;Doesnt work in committee
+3157;committee;doesnt_work;;Doesnt work in committee
+3158;committee;doesnt_work;;Doesnt work in committee
+3159;committee;doesnt_work;;Doesnt work in committee
+3160;committee;doesnt_work;;Doesnt work in committee
+3161;committee;doesnt_work;;Doesnt work in committee
+3162;committee;doesnt_work;;Doesnt work in committee
+3163;committee;doesnt_work;;Doesnt work in committee
+3164;committee;doesnt_work;;Doesnt work in committee
+3165;committee;doesnt_work;;Doesnt work in committee
+3166;committee;doesnt_work;;Doesnt work in committee
+3167;committee;doesnt_work;;Doesnt work in committee
+3168;committee;doesnt_work;;Doesnt work in committee
+3169;committee;doesnt_work;;Doesnt work in committee
+3170;committee;doesnt_work;;Doesnt work in committee
+3171;committee;doesnt_work;;Doesnt work in committee
+3172;committee;doesnt_work;;Doesnt work in committee
+3173;committee;doesnt_work;;Doesnt work in committee
+3174;committee;doesnt_work;;Doesnt work in committee
+3175;committee;doesnt_work;;Doesnt work in committee
+3176;committee;doesnt_work;;Doesnt work in committee
+3177;committee;doesnt_work;;Doesnt work in committee
+3178;committee;doesnt_work;;Doesnt work in committee
+3180;committee;doesnt_work;;Doesnt work in committee
+3181;committee;doesnt_work;;Doesnt work in committee
+3183;committee;doesnt_work;;Doesnt work in committee
+3202;committee;doesnt_work;;Doesnt work in committee
+3203;committee;doesnt_work;;Doesnt work in committee
+3204;committee;doesnt_work;;Doesnt work in committee
+4;committee_position;committee management;Chairman of the Verkhovna Rada of Ukraine Committee;Chairman of the committee
+5;committee_position;committee management;Deputy Chairman of the Verkhovna Rada of Ukraine Committee;Deputy chairman of the committee
+7;committee_position;committee management;Secretary of the Committee of the Verkhovna Rada of Ukraine;Secretary of the committee
+8;committee_position;committee member;Member of the Verkhovna Rada of Ukraine Committee;Member of the committee
+916;committee_position;committee management;First Deputy Chairman of the Verkhovna Rada of Ukraine Committee;First deputy chairman of the committee
+917;committee_position;subcommittee management;Chairman of the Subcommittee of the Verkhovna Rada Committee of Ukraine;Chairman of the subcommittee
+1028;committee_position;faction management;Head of the parliamentary faction;Chairman of the parliamentary faction
+1033;committee_position;Dont_know;Deputy Chairman of the Committee, Chairman of the Subcommittee of the Verkhovna Rada of Ukraine Committee;Deputy Chairman of the Committee, Chairman of the Subcommittee
+1034;committee_position;Dont_know;First Deputy Chairman of the Committee, Chairman of the Subcommittee of the Verkhovna Rada of Ukraine Committee;First Deputy Chairman of the Committee, Chairman of the Subcommittee
+1041;committee_position;Dont_know;Secretary of the Committee, Chairman of the Subcommittee of the Committee of the Verkhovna Rada of Ukraine;Secretary of the Committee, Chairman of the Subcommittee
+1074;committee_position;subcommittee management;Acting Chairman of the Subcommittee;Acting chairman of the subcommittee
+1;faction;rada management;;Rada management
+3025;faction;faction;"Faction of political party ""SERVICE OF PEOPLE""";Servant of the People
+3026;faction;faction;"Faction of political party ""OPPOSITIONAL PLATFORM - FOR LIFE"" in Verkhovna Rada of Ukraine";Opposition Platform - For Life
+3027;faction;faction;"The faction of the political party All-Ukrainian Union ""Motherland"" in the Verkhovna Rada of Ukraine of the Ninth Convocation";Batkivshchyna
+3028;faction;faction;"Faction of the political party ""EUROPEAN SOLIDARITY""";European Solidarity
+3029;faction;faction;"FOLLOWING PARTY OF THE POLITICAL PARTY ""VOICE"" IN THE Ninth convocation";Voice
+3030;faction;group;For the Future group in the Verkhovna Rada of Ukraine;For the future
+1;faction_position;rada management;Chairman of The Verkhovna Rada of Ukraine;Chairman of the Verkhovna Rada
+2;faction_position;rada management;First Deputy Chairman of The Verkhovna Rada of Ukraine;First deputy chairman of the Verkhovna Rada
+3;faction_position;rada management;Deputy Chairman of The Verkhovna Rada of Ukraine;Deputy chairman of the Verkhovna Rada
+918;faction_position;faction member;Member of the parliamentary faction;Member of the faction
+920;faction_position;group member;Member of the Deputies' Group;Member of the MPs group
+1009;faction_position;faction management;First Deputy Head of the Faction;First deputy chairman of the faction
+1029;faction_position;faction management;Deputy chairman of the parliamentary faction;Deputy chairman of the faction
+1042;faction_position;group management;Co-chair of the deputy group;Co-chair of the MPs group
+1050;faction_position;faction management;Co-chair of the parliamentary faction;Co-chair of the faction
+1;gender;gender;male;male
+2;gender;gender;female;female
+20;int_organization;int_organization;The Republic of Estonia;Estonia
+27;int_organization;int_organization;Canada;Canada
+48;int_organization;int_organization;United States of America;USA
+61;int_organization;int_organization;Japan;Japan
+74;int_organization;int_organization;National Parliamentary Group in the Inter-Parliamentary Union;National Parliamentary Group in the Inter-Parliamentary Union
+75;int_organization;int_organization;Council of Europe Parliamentary Assembly;Council of Europe Parliamentary Assembly
+76;int_organization;int_organization;Ukrainian part of the Parliamentary Committee of the Association;Ukrainian part of the Parliamentary Committee of the Association
+77;int_organization;int_organization;Parliamentary Assembly of the Organization for Security and Co-operation in Europe;Parliamentary Assembly of the OSCE
+78;int_organization;int_organization;Parliamentary Assembly of the Organization of the Black Sea Economic Cooperation;Parliamentary Assembly of the Organization of the Black Sea Economic Cooperation
+80;int_organization;int_organization;The Parliamentary dimension of the Central European Initiative;The Parliamentary dimension of the Central European Initiative
+82;int_organization;int_organization;NATO Parliamentary Assembly;NATO Parliamentary Assembly
+257;int_organization;int_organization;Interparliamentary Assembly of the Verkhovna Rada of Ukraine and the Sejm of the Republic of Lithuania;Interparliamentary Assembly Ukraine and Lithuania
+259;int_organization;int_organization;Parliamentary Assembly of Ukraine and the Republic of Poland;Parliamentary Assembly of Ukraine and Poland
+313;int_organization;int_organization;The Republic of Latvia;Latvia
+427;int_organization;int_organization;GUAM Parliamentary Assembly;GUAM Parliamentary Assembly
+527;int_organization;int_organization;the Republic of Lithuania;Lithuania
+573;int_organization;int_organization;Cooperation Committees of the Verkhovna Rada of Ukraine and the National Assembly of the Republic of Belarus;Cooperation Committees of Ukraine and Belarus
+574;int_organization;int_organization;Interparliamentary Assembly of the Verkhovna Rada of Ukraine, the Sejm of the Republic of Lithuania and the Sejm and Senate of the Republic of Poland;Interparliamentary Assembly of Ukraine, Lithuania and Poland
+834;int_organization;int_organization;EU Parliamentary Assembly - Eastern Neighbors (PA EuroNest);EU Parliamentary Assembly - Eastern Neighbors (PA EuroNest)
+928;int_organization;int_organization;The Republic of Poland;Poland
+930;int_organization;int_organization;Parliamentary Assembly of the Verkhovna Rada of Ukraine, the Parliament of Georgia, the Parliament of the Republic of Moldova;Parliamentary Assembly of Ukraine, Georgia, Moldova
+1;int_post;role_in_international_ties;Head of the Inter-Parliamentary Liaison Group;Chairman of the inter-parliamentary liaison group
+2;int_post;role_in_international_ties;Deputy Head of the Inter-Parliamentary Liaison Group;Deputy chairman of the inter-parliamentary liaison group
+3;int_post;role_in_international_ties;Secretary of the Inter-Parliamentary Liaison Group;Secretary of the inter-parliamentary liaison group
+4;int_post;role_in_international_ties;Member of the Inter-Parliamentary Liaison Group;Member of the inter-parliamentary liaison group
+5;int_post;role_in_international_ties;Co-chair of the Inter-Parliamentary Liaison Group;Co-chair of the inter-parliamentary liaison group
+6;int_post;role_in_international_ties;Deputy Co-Chair of the Inter-Parliamentary Liaison Group;Deputy co-chair of the inter-parliamentary liaison group
+16;int_post;role_in_international_ties;Member of the Permanent Delegation;Member of the permanent delegation
+17;int_post;role_in_international_ties;Deputy member of the Permanent Delegation;Deputy member of the permanent delegation
+33;int_post;role_in_international_ties;Member of the Interparliamentary Cooperation Committee;Member of the interparliamentary cooperation committee
+77;int_post;role_in_international_ties;Deputy Chairman of the Permanent Delegation;Deputy chairman of the permanent delegation
+78;int_post;role_in_international_ties;Chairman of the Permanent Delegation;Chairman of the permanent delegation
+101;int_post;role_in_international_ties;Member of the Ukrainian part of the Parliamentary Committee of the Association;Member of the Ukrainian part of the parliamentary committee of the association
+357;int_post;role_in_international_ties;Co-chair of the Interparliamentary Assembly of the Verkhovna Rada of Ukraine;Co-chair of the interparliamentary assembly
+359;int_post;role_in_international_ties;Member of the Ukrainian part of the Interparliamentary Assembly of the Verkhovna Rada of Ukraine;Member of the Ukrainian part of the interparliamentary assembly
+497;int_post;role_in_international_ties;Member of the Executive Committee;Member of the executive committee
+498;int_post;role_in_international_ties;Chairman of the Executive Committee;Chairman of the executive committee
+698;int_post;role_in_international_ties;First Deputy Chairman of the Permanent Delegation;First deputy chairman of the permanent delegation
+718;int_post;role_in_international_ties;Deputy Member;Deputy member
+778;int_post;role_in_international_ties;Deputy Co-Chair of the Inter-Parliamentary Assembly of the Verkhovna Rada of Ukraine;Deputy co-chair of the inter-parliamentary assembly
+798;int_post;role_in_international_ties;Deputy Chairman of the Executive Committee;Deputy chairman of the executive committee
+838;int_post;role_in_international_ties;Co-chair;Co-chair
+17;party_id;party_id;Political Party Vseukrainske Obiednannia Batkivshchyna (eng. Fatherland All-Ukrainian Union);Batkivshchyna
+37;party_id;party_id;Political Party Ahrarna Partiia Ukrainy (eng. );Agrarian Party of Ukraine
+50;party_id;party_id;Non-Party;Non-affiliated
+104;party_id;party_id;Political Party Ukrainska Narodna Partiia (eng. Ukrainian People's Party);Ukrainian Peoples Party
+117;party_id;party_id;Political Party Vseukrainske Obiednannia Svoboda (eng. Freedom All-Ukrainian Union);Svoboda
+192;party_id;party_id;Political Party Yedynyi Tsentr (eng. Single Center);Single Center
+213;party_id;party_id;Political Party Opozytsiinyi Blok (eng. Opposition Bloc);Opposition Bloc
+220;party_id;party_id;Political Party Konhres Ukrainskykh Natsionalistiv (eng. Congress of Ukrainian Nationalists);Congress of Ukrainian Nationalists
+224;party_id;party_id;Political Party Ukrainske Obiednannia Patriotiv – Ukrop (eng. Ukrainian union of the patriots - UKROP);UKROP
+225;party_id;party_id;Political Party Nash Krai (eng. Our Land);Our Land
+226;party_id;party_id;Political Party Sluha Narodu (eng. Servant of the People);Servant of the People
+227;party_id;party_id;Political Party Opozytsiina Platforma - Za Zhyttia (eng. Oppositional Platform - For Life);Opposition Platform - For Life
+228;party_id;party_id;Political Party Yevropeiska Solidarnist (eng. European Solidarity);European Solidarity
+229;party_id;party_id;Political Party Holos (eng. Voice);Voice
+230;party_id;party_id;Political Party Za Konkretni Spravy (eng. For the real deals);For the real deals
+5;region_id;region_id;Vinnytska Oblast;Vinnytska Oblast
+7;region_id;region_id;Volynska Oblast;Volynska Oblast
+12;region_id;region_id;Dnipropetrovska Oblast;Dnipropetrovska Oblast
+14;region_id;region_id;Donetska Oblast;Donetska Oblast
+18;region_id;region_id;Zhytomyrska Oblast;Zhytomyrska Oblast
+21;region_id;region_id;Zakarpatska Oblast;Zakarpatska Oblast
+23;region_id;region_id;Zaporizka Oblast;Zaporizka Oblast
+26;region_id;region_id;Ivano-Frankivska Oblast;Ivano-Frankivska Oblast
+32;region_id;region_id;Kyivska Oblast;Kyivska Oblast
+35;region_id;region_id;Kirovohradska Oblast;Kirovohradska Oblast
+43;region_id;region_id;Luhanska Oblast;Luhanska Oblast
+46;region_id;region_id;Lvivska Oblast;Lvivska Oblast
+48;region_id;region_id;Mykolaivska Oblast;Mykolaivska Oblast
+51;region_id;region_id;Odeska Oblast;Odeska Oblast
+53;region_id;region_id;Poltavska Oblast;Poltavska Oblast
+56;region_id;region_id;Rivnenska Oblast;Rivnenska Oblast
+59;region_id;region_id;Sumska Oblast;Sumska Oblast
+61;region_id;region_id;Ternopilska Oblast;Ternopilska Oblast
+63;region_id;region_id;Kharkivska Oblast;Kharkivska Oblast
+65;region_id;region_id;Khersonska Oblast;Khersonska Oblast
+68;region_id;region_id;Khmelnytska Oblast;Khmelnytska Oblast
+71;region_id;region_id;Cherkaska Oblast;Cherkaska Oblast
+74;region_id;region_id;Chernivetska Oblast;Chernivetska Oblast
+77;region_id;region_id;Chernihivska Oblast;Chernihivska Oblast
+85;region_id;region_id;Kyiv city;Kyiv city
+1;type_elect;elected;constituency;constituency
+2;type_elect;elected;party system;party system
