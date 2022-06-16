@@ -1,5 +1,4 @@
-# Helper Functions for analysis.R (Ukraine Social ID on Social Media)
-# author: Yara Kyrychenko
+# Functions for quanteda, running regressions and plotting 
 
 #### For All ####
 run_regression <- function(data, variable, predictors){
@@ -18,6 +17,26 @@ run_regression <- function(data, variable, predictors){
     apply.weighted.contrasts = getOption("jtools-weighted.contrasts", FALSE)
   )
   return(model)
+}
+
+
+all_reaction_regressions <- function(data, variables, predictors, labels){
+  plural <- data.frame()
+  
+  for(i in 1:length(variables)){
+    model <- run_regression(data,variables[i], predictors)
+    clean_model <- clean_mod(model,labels[i])
+    plural <- rbind(plural, clean_model)
+  }
+  
+  plural$termtemp <- plural$term
+  plural$modeltemp <- plural$model
+  plural$term <- plural$modeltemp
+  plural$model <- plural$termtemp
+  
+  plural <- plural %>% filter(plural$model == "ingroup" | plural$model == "outgroup" )
+  
+  return(plural)
 }
 
 filter_groups_by_lang <- function(media_proua,media_proru){
@@ -118,7 +137,7 @@ clean_mod <- function(modell,label){
   return(stuff)
 }
 
-#### Twitter Media ####
+#### Twitter ####
 prep_tw_data <- function(data){
   
   data$has_media <- is.na(data$media_type) == FALSE
@@ -144,7 +163,7 @@ prep_tw_data_q <- function(dataset,dict){
   return(datasetcombined)
 }
 
-#### Facebook Media ####
+#### Facebook ####
 
 prep_fb_data <- function(datasetcombined){
   #' facebook data preprocessing 
@@ -233,7 +252,7 @@ plot_fb <- function(model,label){
 }
 
 
-#### Telegram Media ####
+#### Telegram ####
 prep_tg_data_q <- function(dataset,dict){
   data <- to_datadict(dataset$message,dict)
   data <- cbind(dataset,data)
@@ -246,6 +265,7 @@ prep_tg_data_q <- function(dataset,dict){
   
   return(data)
 }
+
 #### Plots ####
 
 # identity and affect plots
@@ -285,7 +305,7 @@ identity_affect_plot_nolang <- function(clean_model, title){
     c("Emotion", "Negative", "Moral Emotional")
   )
   
-  plot1 <- {dwplot(clean_model, confint = .95, dot_args = list(size=3, aes(shape = (p.value < .05))), whisker_args = list(size = 2.2), margins=TRUE) %>%
+  plot1 <- {dwplot(clean_model, confint = .95, dot_args = list(size=2, aes(shape = (p.value < .05))), whisker_args = list(size = 1.5), margins=TRUE) %>%
       relabel_predictors(c(
         ingroup  = "Ingroup",
         outgroup = "Outgroup",
@@ -298,16 +318,18 @@ identity_affect_plot_nolang <- function(clean_model, title){
       #geom_signif() +
       theme_apa() +
       theme(legend.position = "none") +
+      theme(axis.text=element_text(size=12)) +
       theme(plot.margin = unit(c(0, 0, 0, 0), "null")) +
       xlab("Odds ratio") +
       xlim(0.6, 1.35) +
       scale_colour_manual(values=c("Facebook"="dodgerblue4", "Twitter"="deepskyblue", "Telegram"="turquoise"), 
                           labels=c("Facebook", "Twitter", "Telegram")) +
       ggtitle(title)}  %>%
-    add_brackets(two_brackets)
+    add_brackets(two_brackets, fontSize = 1)
   
   return(plot1)
 }
+
 
 identity_affect_plot_parties <- function(clean_model, title){
   
@@ -318,7 +340,7 @@ identity_affect_plot_parties <- function(clean_model, title){
     #c("Outgroup", "out_postitive", "out_negative"),
   )
   
-  plot1 <- {dwplot(clean_model, confint = .95, dot_args = list(size=3), whisker_args = list(size = 2.2)) %>% #aes(shape = (p.value < .05))
+  plot1 <- {dwplot(clean_model, confint = .95, dot_args = list(size=2), whisker_args = list(size = 1.5)) %>% #aes(shape = (p.value < .05))
       relabel_predictors(c(
         ingroup  = "Ingroup",
         outgroup = "Outgroup",
@@ -330,7 +352,8 @@ identity_affect_plot_parties <- function(clean_model, title){
       )) +
       geom_vline(xintercept = 1, colour = "grey60", linetype = 2) +
       theme_apa() + 
-      theme(legend.text=element_text(size=16)) + 
+      theme(legend.text=element_text(size=12)) + 
+      theme(axis.text=element_text(size=12)) +
       xlab("Odds ratio") +
       theme(legend.position = "bottom") +
       scale_shape_manual(values=c(23,16)) +
@@ -338,11 +361,11 @@ identity_affect_plot_parties <- function(clean_model, title){
                           labels=c("Facebook", "Twitter")) +
       #xlim(0.6, 1.6) +
       ggtitle(title)}  %>%
-    add_brackets(two_brackets)
+    add_brackets(two_brackets, fontSize = 1)
   
   return(plot1)
 }
-# all plot
+
 
 all_plot <- function(clean_model, title){
 
@@ -362,24 +385,6 @@ all_plot <- function(clean_model, title){
   return(plot1)
 }
 
-all_reaction_regressions <- function(data, variables, predictors, labels){
-  plural <- data.frame()
-  
-  for(i in 1:length(variables)){
-    model <- run_regression(data,variables[i], predictors)
-    clean_model <- clean_mod(model,labels[i])
-    plural <- rbind(plural, clean_model)
-  }
-  
-  plural$termtemp <- plural$term
-  plural$modeltemp <- plural$model
-  plural$term <- plural$modeltemp
-  plural$model <- plural$termtemp
-  
-  plural <- plural %>% filter(plural$model == "ingroup" | plural$model == "outgroup" )
-  
-  return(plural)
-}
 
 reactions_plot <- function(clean_model,title){
   
@@ -404,6 +409,115 @@ reactions_plot <- function(clean_model,title){
 }
 
 
+
+
+#### Time Series ####
+run_smoothing_regressions <- function(df, variable, predictors, start_num=18000, smoothing=28){
+  chunk <- df[start_num <= df$date_num &  df$date_num <= start_num + smoothing,]
+  chunk_r <- run_regression(chunk, variable, predictors)
+  chunks <- clean_mod(chunk_r,start_num)
+  for (i in (start_num+1):(max(df$date_num)-smoothing)){
+    chunk <- df[i <= df$date_num &  df$date_num <= i+smoothing ,]
+    chunk_r <- run_regression(chunk, variable, predictors)
+    chunkmodel <- clean_mod(chunk_r,i)
+    chunks <- rbind(chunks, chunkmodel)
+    print(i)
+    print(chunkmodel$estimate)
+  }
+  return(chunks)
+} 
+
+make_one_timeseries_plot <- function(chunks,  start_num, first_date, 
+                                     term1="outgroup"){
+  
+  chunks_outgroup <- chunks %>% filter(term == term1)
+  margin.error <- chunks_outgroup$statistic * chunks_outgroup$std.error
+  lower.bound <- chunks_outgroup$estimate - margin.error
+  upper.bound <- chunks_outgroup$estimate + margin.error
+  
+  data_out <- data.frame(
+    xValue=(as.Date(first_date) + chunks_outgroup$model - start_num),
+    yValue=chunks_outgroup$estimate,
+    ci_low=lower.bound,  ci_high=upper.bound
+  )
+  
+  plot <- ggplot(data_out, aes(x=xValue, y=yValue, ymin=ci_low, ymax=ci_high)) +
+    geom_line( ) + 
+    scale_x_date(date_breaks = "4 weeks", date_labels = "%Y %b") + 
+    #theme(axis.text.x=element_text(angle=60, hjust=1)) +
+    xlab("Time") +
+    ylab("Odds Ratio") +
+    theme_apa()
+  
+  return(plot)
+  
+}
+
+make_many_timeseries_plot <- function(chunks,  start_num, first_date){
+  data <- data.frame()
+  for (term1 in unique(chunks$term)){ 
+    
+    if (term1 != "(Intercept)"){
+      chunks_outgroup <- chunks %>% filter(term == term1)
+      data_out <- data.frame(
+        xValue=(as.Date(first_date) + chunks_outgroup$model - start_num),
+        yValue=chunks_outgroup$estimate
+      )
+      data_out$Predictor <- term1
+      data <- rbind(data,data_out)
+    }
+  }
+  
+  plot <- ggplot(data, aes(x=xValue, y=yValue,color=Predictor)) +
+    geom_line( ) + 
+    scale_x_date(date_breaks = "4 weeks", date_labels = "%Y %b") + 
+    #theme(axis.text.x=element_text(angle=60, hjust=1)) +
+    xlab("Time") +
+    ylab("Odds Ratio") +
+    theme_apa()
+  
+  return(plot)
+}
+
+make_two_timeseries_plot <- function(chunks, start_num, first_date, 
+                                     term1="outgroup", term2="ingroup"){
+  
+  chunks_outgroup <- chunks %>% filter(term == term1)
+  margin.error <- chunks_outgroup$statistic * chunks_outgroup$std.error
+  lower.bound <- chunks_outgroup$estimate - margin.error
+  upper.bound <- chunks_outgroup$estimate + margin.error
+  
+  chunks_ingroup <- chunks %>% filter(term == term2)
+  margin.error <- chunks_ingroup$statistic * chunks_ingroup$std.error
+  in_lower.bound <- chunks_ingroup$estimate - margin.error
+  in_upper.bound <- chunks_ingroup$estimate + margin.error
+  
+  data_out <- data.frame(
+    xValue=(as.Date(first_date) + chunks_outgroup$model - start_num),
+    yValue=chunks_outgroup$estimate,
+    ci_low=lower.bound,  ci_high=upper.bound
+  )
+  data_in <- data.frame(
+    xValue=(as.Date(first_date) + chunks_ingroup$model - start_num),
+    yValue=chunks_ingroup$estimate,
+    ci_low=in_lower.bound,  ci_high=in_upper.bound
+  )
+  
+  data_out$Predictor <- term1
+  data_in$Predictor <-  term2
+  
+  data <- rbind(data_out,data_in)
+  plot <- ggplot(data, aes(x=xValue, y=yValue, ymin=ci_low, ymax=ci_high, fill=Predictor, linetype=Predictor)) +
+    geom_line( ) + 
+    geom_ribbon(alpha=0.25) +
+    scale_x_date(date_breaks = "4 weeks", date_labels = "%Y %b") + 
+    theme(axis.text.x=element_text(angle=60, hjust=1)) +
+    xlab("Time") +
+    ylab("Odds Ratio") 
+    #theme_apa()
+  
+  return(plot)
+}
 
 
 #### Parties ####

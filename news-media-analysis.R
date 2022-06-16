@@ -55,7 +55,7 @@ same <-  names(tw_media_proua) == names(tw_media_proru)
 tw_media_all <-rbind(tw_media_proua[same,],tw_media_proru[same,])
 
 #### Twitter  Media Engagement ####
-tw_id_predict <- list("ingroup", "outgroup", 
+tw_id_predict <- list("ingroup", "outgroup", #"disputed",
                       "positive", "negative", "moral_emotional",
                       "has_media", "has_URL", "is_retweet", "total_tokens")
 tw_var <- "retweet_count_log"
@@ -78,7 +78,7 @@ tw_labels <- list("retweet", "favorite")
 tw_r_proua <- all_reaction_regressions(tw_media_proua,tw_reactions,tw_id_predict,tw_labels)
 tw_r_proru <- all_reaction_regressions(tw_media_proru,tw_reactions,tw_id_predict,tw_labels)
 
-#### Twitter share/retweet no language ####
+#### Twitter  share/retweet no language ####
 tw_id_predict_fwd <-"engagement_log" #"retweet_count_log"
 
 tw_r_proua_fwd <- run_regression(tw_media_proua, tw_id_predict_fwd, tw_id_predict)
@@ -109,7 +109,7 @@ fb_media_proru_ua <- add_all(data.frame(fb_sep_by_groups[3][1]))
 fb_media_proru_ru <- add_all(data.frame(fb_sep_by_groups[4][1]))
 
 #### Facebook Media Engagement ####
-fb_id_predict <- list("ingroup", "outgroup",#"in_positive", "in_negative", "out_positive", "out_negative",
+fb_id_predict <- list("ingroup", "outgroup", #"disputed", "in_positive", "in_negative", "out_positive", "out_negative",
                    "positive", "negative", "moral_emotional", "total_tokens",
                    "has_media", "has_URL", "Likes.at.Posting", "Followers.at.Posting")
 fb_var <- "shares_log"
@@ -170,7 +170,7 @@ tg_media_proru_ua <- add_all(data.frame(tg_sep_by_groups[3][1]))
 tg_media_proru_ru <- add_all(data.frame(tg_sep_by_groups[4][1]))
 
 #### Telegram Media Engagement ####
-tg_id_predict <- list("ingroup", "outgroup", 
+tg_id_predict <- list("ingroup", "disputed", "outgroup", 
                       "positive", "negative", "moral_emotional",
                       "has_media", "is_fwd", "total_tokens")
 tg_var <- "forwards_log"
@@ -256,19 +256,19 @@ all_idaf_plots <- ggdraw(plot_grid(p1, p2, p3, p4,
              rel_heights = c(1, 1, .3)) + draw_grob(leg, vjust = 0.4))
 
 
-ggsave("news_media_four_plots.png", plot=all_idaf_plots, width = 16, height = 9)
+#ggsave("news_media_four_plots.png", plot=all_idaf_plots, width = 16, height = 9)
 
 
 
 #### Combined Engagement Plots no language ####
-
 both_proua <- rbind(tw_mu, fb_mu, tg_mu)
 both_proru <- rbind(tw_mr, fb_mr, tg_mr)
 
 p11 <- identity_affect_plot_nolang(both_proua, "Pro-Ukrainian News Media (Engagement)") + theme(legend.position = "none")
 p22 <- identity_affect_plot_nolang(both_proru, "Pro-Russian News Media (Engagement)")  + theme(legend.position = "none")
 
-plot1 <- dwplot(both_proua_ua, confint = .95, dot_args = list(size = 1), whisker_args = list(size = 0.9)) %>%
+# this is all just to get the plot's legend; the actual plot is discarded 
+plot1 <- dwplot(both_proua_ua, confint = .95, dot_args = list(size = 2), whisker_args = list(size = 1.5)) %>%
   relabel_predictors(c(
     ingroup  = "Ingroup",
     outgroup = "Outgroup",
@@ -276,16 +276,15 @@ plot1 <- dwplot(both_proua_ua, confint = .95, dot_args = list(size = 1), whisker
     positive = "Positive",
     moral_emotional = "Moral Emotional"
   )) 
-
 plot <- plot1 + theme_bw() + xlab("Odds Ratio") + ylab("") +
   ggtitle("whatever") +
   geom_vline(xintercept = 1, colour = "grey60", linetype = 2) +
-  theme_apa(legend.font.size = 16,
+  theme_apa(legend.font.size = 12,
             legend.pos = "bottom") + 
   scale_colour_manual(values=c("Facebook"="dodgerblue4", "Twitter"="deepskyblue", "Telegram"="turquoise"), 
                       labels=c("Facebook", "Twitter", "Telegram"))
-
 leg <- cowplot::get_legend(plot)
+
 
 both_no_lang <- ggdraw(plot_grid(p11,p22,
                                    nrow = 2, ncol = 2, 
@@ -293,12 +292,13 @@ both_no_lang <- ggdraw(plot_grid(p11,p22,
                                    rel_heights = c(1, .2)) + draw_grob(leg, vjust = 0.4))
 
 
-ggsave("news_media_engagement_no_lang_plots.png", plot=both_no_lang, width = 16, height = 9)
+#ggsave("plots/news_media_engagement_no_lang_plots.png", plot=both_no_lang, width = 17, height = 6)
 
 #### Combined Reactions  Plots ####
 r_proua <- rbind(fb_r_proua, tw_r_proua, tg_r_proua)
 r_proru <- rbind(fb_r_proru, tw_r_proru, tg_r_proru)
 
+# this is all just to get the plot's legend; the actual plot is discarded 
 plot1 <- dwplot(r_proua, confint = .95, dot_args = list(size = 1.2), whisker_args = list(size = 0.7)) 
 plot <- plot1 + theme_bw() + xlab("Odds Ratio") + ylab("") +
   ggtitle("whatever") +
@@ -307,8 +307,8 @@ plot <- plot1 + theme_bw() + xlab("Odds Ratio") + ylab("") +
             legend.pos = "bottom") + 
   scale_colour_manual(values=c("ingroup"="dodgerblue4", "outgroup"="firebrick"), 
                       labels=c("Ingroup", "Outgroup"))
-
 leg <- cowplot::get_legend(plot)
+
 
 rp1 <- reactions_plot(r_proua, "Pro-Ukrainian News Media")
 rp2 <- reactions_plot(r_proru, "Pro-Russian News Media")
@@ -318,6 +318,43 @@ r_plots <- ggdraw(plot_grid(rp1, rp2,
                                    labels = c("A", "B"),
                                    rel_heights = c(1, .1)) + draw_grob(leg, vjust = 0.4))
 
-ggsave("news_media_two_plots.png", plot=r_plots, width = 16, height = 9)
+#ggsave("news_media_two_plots.png", plot=r_plots, width = 16, height = 9)
  
+
+
+
+
+#### Sliding Time Window Analysis ####
+
+
+fb_media_proua_b$date_num <- as.numeric(as.Date(fb_media_proua_b$Post.Created.Date, format="%Y-%m-%d"))
+fb_start_num <- min(fb_media_proua_b$date_num)
+fb_start_date <- as.Date(fb_media_proua_b[fb_media_proua_b$date_num == fb_start_num,]$Post.Created.Date[1])
+fb_chunks_ua <- run_smoothing_regressions(fb_media_proua_b, fb_id_predict_fwd, fb_id_predict, 
+                                          start_num=fb_start_num, smoothing=21)
+
+fb_media_proru_b$date_num <- as.numeric(as.Date(fb_media_proru_b$Post.Created.Date, format="%Y-%m-%d"))
+fb_chunks_ru <- run_smoothing_regressions(fb_media_proru_b, fb_id_predict_fwd, fb_id_predict, 
+                                          start_num=fb_start_num, smoothing=21)
+
+tw_start_num <- 18400
+tw_start_date <- as.Date(tw_media_proru[tw_media_proru$date_num == tw_start_num,]$created_at[1])
+tw_media_proru$date <- as.POSIXct(tw_media_proru$created_at, format="%Y-%m-%d")
+tw_media_proru$date_num <- as.numeric(as.Date(tw_media_proru$date, format="%Y-%m-%d"))
+tw_chunks_ua <- run_smoothing_regressions(tw_media_proua, tw_id_predict_fwd, tw_id_predict, 
+                                          start_num=tw_start_num)
+
+tw_media_proru$date <- as.POSIXct(tw_media_proru$created_at, format="%Y-%m-%d")
+tw_media_proru$date_num <- as.numeric(as.Date(tw_media_proru$date, format="%Y-%m-%d"))
+tw_chunks_ru <- run_smoothing_regressions(tw_media_proru, tw_id_predict_fwd, tw_id_predict, 
+                                          start_num=tw_start_num)
+
+
+tw_ua_ts_plot <- make_two_timeseries_plot(tw_chunks_ua,start_num=tw_start_num,first_date=tw_start_date)
+tw_ru_ts_plot <- make_two_timeseries_plot(tw_chunks_ru,start_num=tw_start_num,first_date=tw_start_date)
+fb_ua_ts_plot <- make_two_timeseries_plot(fb_chunks_ua,start_num=fb_start_num,first_date=fb_start_date)
+fb_ru_ts_plot <- make_two_timeseries_plot(fb_chunks_ru,start_num=fb_start_num,first_date=fb_start_date)
+
+#ggsave("news_media_two_plots.png", plot=r_plots, width = 16, height = 9)
+
 

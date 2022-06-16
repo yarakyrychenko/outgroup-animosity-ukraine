@@ -1,12 +1,13 @@
-# Dictionary Helper Functions for analysis.R (Ukraine Social ID on Social Media)
-# author: Yara Kyrychenko
+# Functions for loading dictionaries for each of the studies 
 
+#### Study 1: News Media ####
 make_ua_dict <- function(){
   #UA Only
   sent <- quanteda:::read_dict_liwc("dictionaries/sentiment/LIWC/Ukrainian_LIWC2015_Dictionary.dic")
   positive <- sent$posemo[[1]]
   negative <- sent$negemo[[1]]
   ua_moral_emotional <- scan("dictionaries/other/Ukraine-Moral-Emotional.txt", what='character', sep="\n", skipNul = TRUE)
+  disputed <- scan("dictionaries/ru-ua/ua/Ua-Disputed.txt", what='character', sep="\n", skipNul = TRUE)
   ua_ua_identity <- scan("dictionaries/ru-ua/ua/Ua-Ukrainian-Identity.txt", what='character', sep="\n", skipNul = TRUE)
   ua_ru_identity <- scan("dictionaries/ru-ua/ua/Ua-Russian-Identity.txt", what='character', sep="\n", skipNul = TRUE) #ru-ua/ua/Ua-Russian-Identity.txt
   ua_ua_politicians <- scan("dictionaries/ru-ua/ua/Ua-Ukrainian-Politicians.txt", what='character', sep="\n", skipNul = TRUE)
@@ -17,6 +18,7 @@ make_ua_dict <- function(){
                                 positive        = tolower(positive),
                                 negative        = tolower(negative),
                                 moral_emotional = tolower(ua_moral_emotional),
+                                disputed        = tolower(disputed),
                                 ua_identity     = tolower(ua_ua_identity),
                                 ru_identity     = tolower(ua_ru_identity),
                                 ua_politicians  = tolower(ua_ua_politicians[1:10]),
@@ -32,6 +34,7 @@ make_ru_dict <- function(){
   positive <- sent$Позитив[[1]]
   negative <- sent$Негатив[[1]]
   ru_moral_emotional <- scan("dictionaries/other/Russian-Moral-Emotional.txt", what='character', sep="\n", skipNul = TRUE)
+  disputed <- scan("dictionaries/ru-ua/ru/Ru-Disputed.txt", what='character', sep="\n", skipNul = TRUE)
   ru_ua_identity <- scan("dictionaries/ru-ua/ru/Ru-Ukrainian-Identity.txt", what='character', sep="\n", skipNul = TRUE)
   ru_ru_identity <- scan("dictionaries/ru-ua/ru/Ru-Russian-Identity.txt", what='character', sep="\n", skipNul = TRUE) #ru-ua/ru/Ru-Russian-Identity.txt
   ru_ua_politicians <- scan("dictionaries/ru-ua/ru/Ru-Ukrainian-Politicians.txt", what='character', sep="\n", skipNul = TRUE)
@@ -39,9 +42,10 @@ make_ru_dict <- function(){
   
   #Create list of ru dictionaries
   ru_dictionary = dictionary(list(
-    positive           = tolower(positive),
-    negative           = tolower(negative),
+    positive        = tolower(positive),
+    negative        = tolower(negative),
     moral_emotional = tolower(ru_moral_emotional),
+    disputed        = tolower(disputed),
     ua_identity     = tolower(ru_ua_identity),
     ru_identity     = tolower(ru_ru_identity),
     ua_politicians  = tolower(ru_ua_politicians[1:10]),
@@ -49,6 +53,9 @@ make_ru_dict <- function(){
   ))
   return(ru_dictionary)
 }
+
+
+#### Study 2: Parties ####
 
 make_ua_party_dict <- function(){
   sent <- quanteda:::read_dict_liwc("dictionaries/sentiment/LIWC/Ukrainian_LIWC2015_Dictionary.dic")

@@ -94,7 +94,6 @@ party_retweets_all <- identity_affect_plot_parties(all, "Twitter retweets for po
 #ggsave("party_retweets_all.png", plot=party_retweets_all, width = 16, height = 9)
 
 
-
 tm1 <- run_regression(tw_party_r25, tw_var2, tw_party_predict)
 tm2 <- run_regression(tw_party_r26, tw_var2, tw_party_predict)
 tm3 <- run_regression(tw_party_r27, tw_var2, tw_party_predict)
@@ -194,14 +193,6 @@ m <- run_regression(together, fb_var, fb_party_predict)
 m <- clean_mod(m,"Facebook")
 #togetherplot <- identity_affect_plot_parties(m, "Facebook shares") 
 
-together_both <- rbind(m,tw_m)
-together_both_leg <- identity_affect_plot_parties(together_both, "Political parties") 
-
-#ggsave("party_all_together.png", plot=together_both_leg, width = 16, height = 9)
-
-
-
-
 
 #Model  
 fb_party_not25 <- fb_party_r3 %>% filter(User.Name != party_handles$FB.handle[1] )
@@ -214,3 +205,9 @@ notm1 <- clean_mod(notm1,"Opposition")
 main <- rbind(m1,notm1)
 identity_affect_plot_parties(main, "Government versus Opposition")
 
+
+#### Together ####
+together_both <- rbind(m,tw_m)
+together_both_leg <- identity_affect_plot_parties(together_both, "") 
+
+ggsave("plots/parties_all_together.png", plot=together_both_leg, width = 8, height = 6)
