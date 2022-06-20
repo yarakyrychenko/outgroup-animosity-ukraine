@@ -1,5 +1,7 @@
 # datasets are too heavy for GitHub
 datasets
+datasets-raw
+MediaChannels
 
 # LIWC Dictionaries 
 dictionaries/sentiment/LIWC

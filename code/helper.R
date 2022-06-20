@@ -91,6 +91,7 @@ filter_groups_by_id <- function(media_proua,media_proru){
   return(stuff)
 }
 
+
 to_datadict <- function(text, dict){
   #' turns list of texts and a dictionary into dataframe
   
@@ -321,7 +322,7 @@ identity_affect_plot_nolang <- function(clean_model, title){
       theme(axis.text=element_text(size=12)) +
       theme(plot.margin = unit(c(0, 0, 0, 0), "null")) +
       xlab("Odds ratio") +
-      xlim(0.6, 1.35) +
+      xlim(0.55, 1.35) +
       scale_colour_manual(values=c("Facebook"="dodgerblue4", "Twitter"="deepskyblue", "Telegram"="turquoise"), 
                           labels=c("Facebook", "Twitter", "Telegram")) +
       ggtitle(title)}  %>%
